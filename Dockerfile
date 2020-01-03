@@ -1,5 +1,5 @@
 FROM ubuntu:bionic
-LABEL maintainer="sameer@damagehead.com"
+LABEL maintainer="Akash Kakkar <akash.galaxy07@gmail.com>"
 
 ENV SQUID_VERSION=3.5.27 \
     SQUID_CACHE_DIR=/var/spool/squid \
