@@ -6,7 +6,7 @@ services:
         context: .
         dockerfile: ./Dockerfile
     ports:
-      - "3128:3128"
+      - "51897:51897"
     container_name: 'squid'
     volumes:
       - ./logs:/var/log/squid
