@@ -1,7 +1,7 @@
-FROM ubuntu:bionic
+FROM ubuntu:latest
 LABEL maintainer="Akash Kakkar <akash.galaxy07@gmail.com>"
 
-ENV SQUID_VERSION=3.5.27 \
+ENV SQUID_VERSION=4.10 \
     SQUID_CACHE_DIR=/var/spool/squid \
     SQUID_LOG_DIR=/var/log/squid \
     SQUID_USER=proxy
