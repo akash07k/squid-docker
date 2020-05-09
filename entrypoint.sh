@@ -12,8 +12,13 @@ create_cache_dir() {
   chown -R ${SQUID_USER}:${SQUID_USER} ${SQUID_CACHE_DIR}
 }
 
+init_auth_file() {
+  chown -R ${SQUID_USER}:${SQUID_USER} ${SQUID_AUTH_FILE}
+}
+
 create_log_dir
 create_cache_dir
+init_auth_file
 
 # allow arguments to be passed to squid
 if [[ ${1:0:1} = '-' ]]; then
